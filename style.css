@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: auto;
+    width: 50%;
+}
+
+div, form {
+    font-size: 1.1em;
+}
+
+header {
+    margin-top: 60px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    column-count: 2;
+    grid-template-columns: 70% 30%;
+    column-gap: 15px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    background-color: #f7f7f7;
+    border: 1px solid #e8e8e4;
+    border-radius: 3px;
+    text-indent: 5px;
+    font-size: 11pt;
+}
+
+input:focus {
+    outline-color: #2a9d8f;
+}
+
+button {
+    grid-column: 2;
+    background-color: #2a9d8f;
+    color: white;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-color: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 1.5px #e8e8e4;
+    font-size: 0.9em;
+}
+
+button:hover, li:hover {
+    cursor: pointer;
+}
+
+#productManager {
+    display: grid;
+    column-count: 3;
+    grid-template-columns: 17% 3% 80%;
+}
+
+a {
+    color: #2a9d8f;
+    grid-column: 3;
+    text-align: right;
+}
+
+#txtNumber {
+    color: #f4a261;
+    font-weight: bold;
+    grid-column: 2;
+}
+
+#lblNumber{
+    grid-column: 1;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    grid-column: 1 / span 3;
+}
+
+li {
+    width: auto;
+    padding: 10px;
+    background-color: #f7f7f7;
+    color: #f4a261;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+li:hover {
+    background-color: #f4a261;
+    color: white;
+    padding: 15px;
+    font-size: larger;
+    font-weight: 500;
+}
+
