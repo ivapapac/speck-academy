@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
     var products = LoadProducts();
 
     $('#btnAdd').click(function(event){
