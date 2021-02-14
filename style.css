@@ -6,27 +6,15 @@ body {
     width: 50%;
 }
 
-div, form {
-    font-size: 1.1em;
-}
-
 header {
     margin-top: 60px;
-    font-size: 1.3em;
     text-align: center;
 }
 
 form {
     display: grid;
-    column-count: 2;
-    grid-template-columns: 70% 30%;
-    column-gap: 15px;
     margin-top: 40px;
     margin-bottom: 50px;
-}
-
-label {
-    margin-bottom: 10px;
 }
 
 input {
@@ -42,7 +30,6 @@ input:focus {
 }
 
 button {
-    grid-column: 2;
     background-color: #2a9d8f;
     color: white;
     padding-top: 7px;
@@ -50,7 +37,6 @@ button {
     border-color: transparent;
     border-radius: 3px;
     box-shadow: 0px 0px 3px 1.5px #e8e8e4;
-    font-size: 0.9em;
 }
 
 button:hover, li:hover {
@@ -59,34 +45,23 @@ button:hover, li:hover {
 
 #productManager {
     display: grid;
-    column-count: 3;
-    grid-template-columns: 17% 3% 80%;
 }
 
 a {
     color: #2a9d8f;
-    grid-column: 3;
-    text-align: right;
 }
 
 #txtNumber {
     color: #f4a261;
     font-weight: bold;
-    grid-column: 2;
-}
-
-#lblNumber{
-    grid-column: 1;
 }
 
 ul {
     list-style-type: none;
     padding: 0px;
-    grid-column: 1 / span 3;
 }
 
 li {
-    width: auto;
     padding: 10px;
     background-color: #f7f7f7;
     color: #f4a261;
@@ -98,8 +73,105 @@ li {
 li:hover {
     background-color: #f4a261;
     color: white;
-    padding: 15px;
     font-size: larger;
     font-weight: 500;
+}
+
+@media only screen and (min-width: 690px){
+
+    div, form {
+        font-size: 14pt;
+    }
+
+    form {
+        column-count: 2;
+        grid-template-columns: 70% 30%;
+        column-gap: 15px;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    input {
+        grid-column: 1;
+    }
+
+    button {
+        grid-column: 2;
+        font-size: 12pt;
+    }
+
+    #productManager {
+        column-count: 2;
+    }
+
+    a {
+        grid-column: 2;
+        text-align: right;
+    }
+
+    #lblNumber{
+        grid-column: 1;
+    }
+
+    #txtNumber {
+        grid-column: 1;
+    }
+
+    ul {
+        grid-column: 1 / span 2;
+    }
+}
+
+@media only screen and (max-width: 690px){
+
+    div, form {
+        font-size: 12pt;
+    }
+
+    form {
+        column-count: 1;
+    }
+
+    label {
+        margin-bottom: 1px;
+    }
+
+    input {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        margin-bottom: 10px;
+    }
+
+    button {
+        font-size: 11pt;
+    }
+
+    #productManager {
+        column-count: 1;
+        row-gap: 10px;
+    }
+
+    a {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+        text-align: left;
+    }
+
+    #lblNumber{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #txtNumber {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    ul {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
 }
 
