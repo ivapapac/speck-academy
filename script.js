@@ -14,7 +14,9 @@ $(document).ready(function() {
         }
     })
 
-    $('#btnRemove').click(function(){
+    $('#btnRemove').click(function(event){
+        event.preventDefault();
+
         if(confirm('Are you sure that you want to remove all products?')){
             localStorage.clear();
             products = [];
