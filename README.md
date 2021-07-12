@@ -1,0 +1,2 @@
+# Speck Academy elimination task
+
